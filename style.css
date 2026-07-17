@@ -1,0 +1,95 @@
+:root {
+  --navy: #b0c4de;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.mincho {
+  font-family: "Shippori Mincho", serif;
+}
+
+/* ---------- ヘッダー ---------- */
+.site-header {
+  background: var(--navy);
+  color: var(--paper);
+  border-bottom: 3px solid var(--brass);
+}
+
+.site-header .brand {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+.site-header .brand .em {
+  color: var(--brass-l);
+}
+
+.site-header a.navlink {
+  color: #000;
+  text-decoration: none;
+  letter-spacing: .06em;
+  margin-left: 1.2rem;
+}
+
+.site-header a.navlink:hover {
+  color: var(--brass-l);
+}
+
+/* ---------- カード ---------- */
+.spot-card {
+  border: 1px solid #e3ddce;
+  border-top: 4px solid var(--navy);
+  border-radius: .5rem;
+  height: 100%;
+  background: #fdfcf9;
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+
+.spot-card .card-title {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  color: #3a5a78;
+}
+
+.spot-card:hover {
+  box-shadow: 0 8px 22px rgba(27, 42, 74, .12);
+  transform: translateY(-3px);
+}
+
+.dist {
+  color: var(--navy-2);
+  font-weight: 700;
+}
+
+/* ---------- フッター ---------- */
+.site-footer {
+  background: var(--navy);
+}
+
+.site-footer a {
+  color: var(--brass-l);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 3px solid var(--brass);
+  outline-offset: 2px;
+}
+
+#mapid {
+  height: 500px;
+  width: 100%;
+}
