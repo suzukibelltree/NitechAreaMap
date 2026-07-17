@@ -1,5 +1,11 @@
+/*色をあらかじめ変数として定義しておく */
 :root {
-  --navy: #b0c4de;
+  --navy: #1f3b57;
+  --navy-2: #3a5a78;
+  --ink: #2f2a22;
+  --paper: #fdfcf9;
+  --brass: #a97d2f;
+  --brass-l: #cf9f4f;
 }
 
 html {
@@ -34,7 +40,7 @@ body {
 }
 
 .site-header a.navlink {
-  color: #000;
+  color: var(--paper);
   text-decoration: none;
   letter-spacing: .06em;
   margin-left: 1.2rem;
@@ -73,6 +79,7 @@ body {
 /* ---------- フッター ---------- */
 .site-footer {
   background: var(--navy);
+  color: var(--paper);
 }
 
 .site-footer a {
